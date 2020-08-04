@@ -1,7 +1,7 @@
 +++
 title = "My Emacs Configuration"
 date = 2020-01-15T17:17:00+08:00
-lastmod = 2020-08-03T23:25:17+08:00
+lastmod = 2020-08-04T11:28:39+08:00
 tags = ["Emacs"]
 draft = false
 weight = 10
