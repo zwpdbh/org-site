@@ -1,7 +1,7 @@
 +++
 title = "Org+ox-hugo+HUGO"
 date = 2019-12-12T15:28:00+08:00
-lastmod = 2020-08-04T11:50:21+08:00
+lastmod = 2020-08-04T17:35:09+08:00
 tags = ["Emacs"]
 draft = false
 weight = 10
@@ -9,6 +9,23 @@ autoCollapseToc = true
 mathjax = true
 contentCopyright = "MIT"
 +++
+
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+- [Introduction](#introduction)
+- [Create my-site using HUGO's academic theme](#create-my-site-using-hugo-s-academic-theme)
+- [Personalize your site with Academic theme](#personalize-your-site-with-academic-theme)
+- [Add Table of Content](#add-table-of-content)
+- [Configure emacs with ox-hugo](#configure-emacs-with-ox-hugo)
+- [Troubleshootings](#troubleshootings)
+- [References](#references)
+
+</div>
+<!--endtoc-->
+
 
 ## Introduction {#introduction}
 
@@ -57,10 +74,25 @@ We could use Emacs's org-mode to easily take notes and export into different for
         -   Edit line 15 as: page\_type = “software-engineering”
 
 
-## Add custome CSS to make each post’s table of content float at right side {#add-custome-css-to-make-each-post-s-table-of-content-float-at-right-side}
+## Add Table of Content {#add-table-of-content}
 
--   (outdated) Edit config/\_default/params.toml plugins\_css = [“my-layout”]
--   Create and edit my-layout.css under themes/academic/assets/css
+-   ref: [use org-generated TOC](https://ox-hugo.scripter.co/doc/org-toc/)
+-   Set `ox-hugo` to export TOC:
+
+    ```emacs-lisp
+    (setq org-hugo-export-with-toc 2)
+    ```
+-   Set the `EXPORT_OPTIONS` to `toc:t` or `toc:2` under the each post's corresponding headline:
+
+    ```text
+    :EXPORT_OPTIONS: :toc:t
+    ```
+-   Now, the exported markdown and corresponding html will contain a div
+
+    ```text
+    <div class="ox-hugo-toc toc">
+    ```
+-   Create css at `<HUGO_SITE_DIR>/assets/scss/custom.scss`
 
     ```text
     div.ox-hugo-toc.toc {
@@ -78,6 +110,8 @@ We could use Emacs's org-mode to easily take notes and export into different for
         font-size: 16px
     }
     ```
+
+    -   It will make TOC float at the right side of page.
 
 
 ## Configure emacs with ox-hugo {#configure-emacs-with-ox-hugo}
