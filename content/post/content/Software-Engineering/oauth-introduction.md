@@ -1,7 +1,7 @@
 +++
 title = "OAuth Introduction"
 date = 2020-08-04T18:11:00+08:00
-lastmod = 2020-08-04T18:18:02+08:00
+lastmod = 2020-08-04T18:23:13+08:00
 tags = ["Software-Engineering"]
 draft = false
 weight = 10
@@ -79,7 +79,7 @@ author = "Z wei"
 -   Different, though, is that the token is never sent to the protected resources. Intead, the client uses the refresh token to request new access tokens **without involving the resource owner**.
 -   diagram
 
-    {{< figure src="/ox-hugo/refresh_token.png" >}}
+    {{< figure src="/ox-hugo/refreshToken.png" >}}
 
 
 ## Authorization code grant {#authorization-code-grant}
@@ -96,7 +96,7 @@ Client -> ProtectedResource: 8. Client sends access token to protected resource
 Client <- ProtectedResource: 9. Protected resource returns resource to Client
 ```
 
-{{< figure src="/ox-hugo/authorization_code_grant.png" >}}
+{{< figure src="/ox-hugo/authorizationCodeGrant.png" >}}
 
 -   step2's response is an HTTP redirect, it causes step 3: cause the browser to send an HTTP GET to the autorization server. step2 have the following query parameters:
     -   `response_type`
