@@ -1,7 +1,7 @@
 +++
 title = "My Emacs Configuration"
 date = 2020-01-15T17:17:00+08:00
-lastmod = 2020-08-04T11:28:39+08:00
+lastmod = 2020-08-04T15:04:45+08:00
 tags = ["Emacs"]
 draft = false
 weight = 10
@@ -10,6 +10,50 @@ mathjax = true
 contentCopyright = "MIT"
 author = "Z wei"
 +++
+
+<div class="ox-hugo-toc toc">
+<div></div>
+
+<div class="heading">Table of Contents</div>
+
+- [Good emacs configuration](#good-emacs-configuration)
+- [Good articles](#good-articles)
+- [Emacs on Windows10](#emacs-on-windows10)
+    - [Set terminal in Windows10 (for GitBash and msys2)](#set-terminal-in-windows10--for-gitbash-and-msys2)
+    - [Install Emacs](#install-emacs)
+    - [(optional) Emacs in WSL](#optional--emacs-in-wsl)
+    - [(optional) Emacs in msys2](#optional--emacs-in-msys2)
+- [Emacs on Mac OSX](#emacs-on-mac-osx)
+- [Indentation for Lisp and Elisp](#indentation-for-lisp-and-elisp)
+- [Terminal setup](#terminal-setup)
+    - [Emacs in Microsoft Windows](#emacs-in-microsoft-windows)
+    - [Set terminal env](#set-terminal-env)
+    - [Setup zsh](#setup-zsh)
+- [Font](#font)
+- [Latex](#latex)
+    - [<span class="org-todo done DONE">DONE</span> Render LaTeX fragments in Org-mode](#render-latex-fragments-in-org-mode)
+    - [<span class="org-todo todo DOING">DOING</span> Org-babel](#org-babel)
+- [R](#r)
+- [JavaScript](#javascript)
+- [Org](#org)
+    - [Use emacs to create blog sites](#use-emacs-to-create-blog-sites)
+- [C/C++ related](#c-c-plus-plus-related)
+- [Python related](#python-related)
+- [Troubleshootings](#troubleshootings)
+    - [Keybindings behave different from GUI in pure text terminal](#keybindings-behave-different-from-gui-in-pure-text-terminal)
+    - [Copy and Paste from clipboard](#copy-and-paste-from-clipboard)
+    - [Font is not set in terminal](#font-is-not-set-in-terminal)
+    - [Error loading autoloads: (epg-error no usable configuration OpenPGP)](#error-loading-autoloads--epg-error-no-usable-configuration-openpgp)
+    - [Apt install error: ument](#apt-install-error-ument)
+    - [Cannot open load file: No such file or directories, adaptive-wrap](#cannot-open-load-file-no-such-file-or-directories-adaptive-wrap)
+    - [<span class="org-todo todo DOING">DOING</span> Network: make client process failed: Connection refused](#network-make-client-process-failed-connection-refused)
+    - [<span class="org-todo todo DOING">DOING</span> Chinese characters could not be displayed properly](#chinese-characters-could-not-be-displayed-properly)
+    - [Font missing](#font-missing)
+    - [<span class="org-todo done DONE">DONE</span> org-latex-preview failed with errror: Please adjust ‘dvipng’ part of ‘org-preview-latex-process-alist’](#org-latex-preview-failed-with-errror-please-adjust-dvipng-part-of-org-preview-latex-process-alist)
+
+</div>
+<!--endtoc-->
+
 
 ## Good emacs configuration {#good-emacs-configuration}
 
