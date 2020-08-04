@@ -1,7 +1,7 @@
 +++
 title = "Org+ox-hugo+HUGO"
 date = 2019-12-12T15:28:00+08:00
-lastmod = 2020-08-04T17:35:09+08:00
+lastmod = 2020-08-04T19:13:26+08:00
 tags = ["Emacs"]
 draft = false
 weight = 10

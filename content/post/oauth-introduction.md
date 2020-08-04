@@ -1,7 +1,7 @@
 +++
 title = "OAuth Introduction"
 date = 2020-08-04T18:11:00+08:00
-lastmod = 2020-08-04T18:23:13+08:00
+lastmod = 2020-08-04T19:13:46+08:00
 tags = ["Software-Engineering"]
 draft = false
 weight = 10
